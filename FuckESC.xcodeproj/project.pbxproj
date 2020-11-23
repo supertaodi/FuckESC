@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A28546B256B8D0D00526DB0 /* FuckESC.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 2A28546A256B8D0D00526DB0 /* FuckESC.entitlements */; };
+		2A28546D256B8D0D00526DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28546C256B8D0D00526DB0 /* AppDelegate.swift */; };
+		2A285470256B8D0D00526DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A28546E256B8D0D00526DB0 /* Main.storyboard */; };
+		2A285472256B8D0D00526DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A285471256B8D0D00526DB0 /* ViewController.swift */; };
+		2A285474256B8D0E00526DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A285473256B8D0E00526DB0 /* Assets.xcassets */; };
+		2A28547B256B8D0E00526DB0 /* FuckESC Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2A28547A256B8D0E00526DB0 /* FuckESC Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2A285480256B8D0E00526DB0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A28547F256B8D0E00526DB0 /* Cocoa.framework */; };
+		2A285483256B8D0E00526DB0 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A285482256B8D0E00526DB0 /* SafariExtensionHandler.swift */; };
+		2A285485256B8D0E00526DB0 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A285484256B8D0E00526DB0 /* SafariExtensionViewController.swift */; };
+		2A285488256B8D0E00526DB0 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A285486256B8D0E00526DB0 /* SafariExtensionViewController.xib */; };
+		2A28548B256B8D0E00526DB0 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A28548A256B8D0E00526DB0 /* script.js */; };
+		2A28548D256B8D0E00526DB0 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A28548C256B8D0E00526DB0 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A28547C256B8D0E00526DB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A28545F256B8D0D00526DB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A285479256B8D0E00526DB0;
+			remoteInfo = "FuckESC Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A285494256B8D0E00526DB0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2A28547B256B8D0E00526DB0 /* FuckESC Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A285467256B8D0D00526DB0 /* FuckESC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckESC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A28546A256B8D0D00526DB0 /* FuckESC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FuckESC.entitlements; sourceTree = "<group>"; };
+		2A28546C256B8D0D00526DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A28546F256B8D0D00526DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A285471256B8D0D00526DB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A285473256B8D0E00526DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A285475256B8D0E00526DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A28547A256B8D0E00526DB0 /* FuckESC Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FuckESC Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A28547F256B8D0E00526DB0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2A285482256B8D0E00526DB0 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		2A285484256B8D0E00526DB0 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		2A285487256B8D0E00526DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		2A285489256B8D0E00526DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A28548A256B8D0E00526DB0 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		2A28548C256B8D0E00526DB0 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		2A28548E256B8D0E00526DB0 /* FuckESC_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FuckESC_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A285464256B8D0D00526DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A285477256B8D0E00526DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A285480256B8D0E00526DB0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A28545E256B8D0D00526DB0 = {
+			isa = PBXGroup;
+			children = (
+				2A285469256B8D0D00526DB0 /* FuckESC */,
+				2A285481256B8D0E00526DB0 /* FuckESC Extension */,
+				2A28547E256B8D0E00526DB0 /* Frameworks */,
+				2A285468256B8D0D00526DB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A285468256B8D0D00526DB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A285467256B8D0D00526DB0 /* FuckESC.app */,
+				2A28547A256B8D0E00526DB0 /* FuckESC Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A285469256B8D0D00526DB0 /* FuckESC */ = {
+			isa = PBXGroup;
+			children = (
+				2A28546A256B8D0D00526DB0 /* FuckESC.entitlements */,
+				2A28546C256B8D0D00526DB0 /* AppDelegate.swift */,
+				2A28546E256B8D0D00526DB0 /* Main.storyboard */,
+				2A285471256B8D0D00526DB0 /* ViewController.swift */,
+				2A285473256B8D0E00526DB0 /* Assets.xcassets */,
+				2A285475256B8D0E00526DB0 /* Info.plist */,
+			);
+			path = FuckESC;
+			sourceTree = "<group>";
+		};
+		2A28547E256B8D0E00526DB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A28547F256B8D0E00526DB0 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A285481256B8D0E00526DB0 /* FuckESC Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2A285482256B8D0E00526DB0 /* SafariExtensionHandler.swift */,
+				2A285484256B8D0E00526DB0 /* SafariExtensionViewController.swift */,
+				2A285486256B8D0E00526DB0 /* SafariExtensionViewController.xib */,
+				2A285489256B8D0E00526DB0 /* Info.plist */,
+				2A28548A256B8D0E00526DB0 /* script.js */,
+				2A28548C256B8D0E00526DB0 /* ToolbarItemIcon.pdf */,
+				2A28548E256B8D0E00526DB0 /* FuckESC_Extension.entitlements */,
+			);
+			path = "FuckESC Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A285466256B8D0D00526DB0 /* FuckESC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A285495256B8D0E00526DB0 /* Build configuration list for PBXNativeTarget "FuckESC" */;
+			buildPhases = (
+				2A285463256B8D0D00526DB0 /* Sources */,
+				2A285464256B8D0D00526DB0 /* Frameworks */,
+				2A285465256B8D0D00526DB0 /* Resources */,
+				2A285494256B8D0E00526DB0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A28547D256B8D0E00526DB0 /* PBXTargetDependency */,
+			);
+			name = FuckESC;
+			productName = FuckESC;
+			productReference = 2A285467256B8D0D00526DB0 /* FuckESC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A285479256B8D0E00526DB0 /* FuckESC Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A285491256B8D0E00526DB0 /* Build configuration list for PBXNativeTarget "FuckESC Extension" */;
+			buildPhases = (
+				2A285476256B8D0E00526DB0 /* Sources */,
+				2A285477256B8D0E00526DB0 /* Frameworks */,
+				2A285478256B8D0E00526DB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FuckESC Extension";
+			productName = "FuckESC Extension";
+			productReference = 2A28547A256B8D0E00526DB0 /* FuckESC Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A28545F256B8D0D00526DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = toadi;
+				TargetAttributes = {
+					2A285466256B8D0D00526DB0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2A285479256B8D0E00526DB0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 2A285462256B8D0D00526DB0 /* Build configuration list for PBXProject "FuckESC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A28545E256B8D0D00526DB0;
+			productRefGroup = 2A285468256B8D0D00526DB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A285466256B8D0D00526DB0 /* FuckESC */,
+				2A285479256B8D0E00526DB0 /* FuckESC Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A285465256B8D0D00526DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A28546B256B8D0D00526DB0 /* FuckESC.entitlements in Resources */,
+				2A285474256B8D0E00526DB0 /* Assets.xcassets in Resources */,
+				2A285470256B8D0D00526DB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A285478256B8D0E00526DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A28548D256B8D0E00526DB0 /* ToolbarItemIcon.pdf in Resources */,
+				2A285488256B8D0E00526DB0 /* SafariExtensionViewController.xib in Resources */,
+				2A28548B256B8D0E00526DB0 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A285463256B8D0D00526DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A285472256B8D0D00526DB0 /* ViewController.swift in Sources */,
+				2A28546D256B8D0D00526DB0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A285476256B8D0E00526DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A285485256B8D0E00526DB0 /* SafariExtensionViewController.swift in Sources */,
+				2A285483256B8D0E00526DB0 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A28547D256B8D0E00526DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A285479256B8D0E00526DB0 /* FuckESC Extension */;
+			targetProxy = 2A28547C256B8D0E00526DB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A28546E256B8D0D00526DB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A28546F256B8D0D00526DB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A285486256B8D0E00526DB0 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A285487256B8D0E00526DB0 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A28548F256B8D0E00526DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A285490256B8D0E00526DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2A285492256B8D0E00526DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "FuckESC Extension/FuckESC_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FuckESC Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "taodi.FuckESC-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2A285493256B8D0E00526DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "FuckESC Extension/FuckESC_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FuckESC Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "taodi.FuckESC-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2A285496256B8D0E00526DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FuckESC/FuckESC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FuckESC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taodi.FuckESC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2A285497256B8D0E00526DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FuckESC/FuckESC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FuckESC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = taodi.FuckESC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A285462256B8D0D00526DB0 /* Build configuration list for PBXProject "FuckESC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A28548F256B8D0E00526DB0 /* Debug */,
+				2A285490256B8D0E00526DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A285491256B8D0E00526DB0 /* Build configuration list for PBXNativeTarget "FuckESC Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A285492256B8D0E00526DB0 /* Debug */,
+				2A285493256B8D0E00526DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A285495256B8D0E00526DB0 /* Build configuration list for PBXNativeTarget "FuckESC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A285496256B8D0E00526DB0 /* Debug */,
+				2A285497256B8D0E00526DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A28545F256B8D0D00526DB0 /* Project object */;
+}
