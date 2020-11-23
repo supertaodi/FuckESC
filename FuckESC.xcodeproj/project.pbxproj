@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2751F5256B9A6E002F9B10 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2751F4256B9A6E002F9B10 /* icon.png */; };
 		2A28546B256B8D0D00526DB0 /* FuckESC.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 2A28546A256B8D0D00526DB0 /* FuckESC.entitlements */; };
 		2A28546D256B8D0D00526DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28546C256B8D0D00526DB0 /* AppDelegate.swift */; };
 		2A285470256B8D0D00526DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A28546E256B8D0D00526DB0 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		2A285485256B8D0E00526DB0 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A285484256B8D0E00526DB0 /* SafariExtensionViewController.swift */; };
 		2A285488256B8D0E00526DB0 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A285486256B8D0E00526DB0 /* SafariExtensionViewController.xib */; };
 		2A28548B256B8D0E00526DB0 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A28548A256B8D0E00526DB0 /* script.js */; };
-		2A28548D256B8D0E00526DB0 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A28548C256B8D0E00526DB0 /* ToolbarItemIcon.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A2751F4256B9A6E002F9B10 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2A285467256B8D0D00526DB0 /* FuckESC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckESC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A28546A256B8D0D00526DB0 /* FuckESC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FuckESC.entitlements; sourceTree = "<group>"; };
 		2A28546C256B8D0D00526DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		2A285487256B8D0E00526DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		2A285489256B8D0E00526DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A28548A256B8D0E00526DB0 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		2A28548C256B8D0E00526DB0 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		2A28548E256B8D0E00526DB0 /* FuckESC_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FuckESC_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +130,8 @@
 				2A285484256B8D0E00526DB0 /* SafariExtensionViewController.swift */,
 				2A285486256B8D0E00526DB0 /* SafariExtensionViewController.xib */,
 				2A285489256B8D0E00526DB0 /* Info.plist */,
+				2A2751F4256B9A6E002F9B10 /* icon.png */,
 				2A28548A256B8D0E00526DB0 /* script.js */,
-				2A28548C256B8D0E00526DB0 /* ToolbarItemIcon.pdf */,
 				2A28548E256B8D0E00526DB0 /* FuckESC_Extension.entitlements */,
 			);
 			path = "FuckESC Extension";
@@ -228,7 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A28548D256B8D0E00526DB0 /* ToolbarItemIcon.pdf in Resources */,
+				2A2751F5256B9A6E002F9B10 /* icon.png in Resources */,
 				2A285488256B8D0E00526DB0 /* SafariExtensionViewController.xib in Resources */,
 				2A28548B256B8D0E00526DB0 /* script.js in Resources */,
 			);
